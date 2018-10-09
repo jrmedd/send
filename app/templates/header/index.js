@@ -18,21 +18,16 @@ module.exports = function(state) {
   const header = html`
   <header class="header">
     <div class="logo">
-      <a class="logo__link" href="/">
+    <div class="logo__subtitle">
+        Powered by
+      </div>
+      <a class="logo__link" href="https://send.firefox.com/"">
         <img
           src="${assets.get('send_logo.svg')}"
           alt="Send"/>
         <h1 class="logo__title">Send</h1>
       </a>
-      <div class="logo__subtitle">
-        <a class="logo__subtitle-link" href="https://testpilot.firefox.com">Firefox Test Pilot</a>
-        <div>${state.translate('siteSubtitle')}</div>
-      </div>
     </div>
-    <a href="${feedbackUrl}"
-      rel="noreferrer noopener"
-      class="feedback"
-      target="_blank">${state.translate('siteFeedback')}</a>
   </header>`;
   // HACK
   // We only want to render this once because we

@@ -10,9 +10,9 @@ nanotiming.disabled = true;
 const app = choo();
 
 function banner(state, emit) {
-  if (state.promo && !state.route.startsWith('/unsupported/')) {
+  /*if (state.promo && !state.route.startsWith('/unsupported/')) {
     return fxPromo(state, emit);
-  }
+  }*/
 }
 
 function body(template) {

@@ -57,13 +57,8 @@ const conf = convict({
   },
   expire_seconds: {
     format: Number,
-    default: 86400,
+    default: 604800,
     env: 'EXPIRE_SECONDS'
-  },
-  expire_limit: {
-    format: Array,
-    default: [1, 2, 3, 4, 5, 20],
-    env: 'EXPIRE_LIMIT'
   },
   l10n_dev: {
     format: Boolean,

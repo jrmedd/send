@@ -9,8 +9,5 @@ module.exports = function(state) {
       <div class="description">
         ${state.translate('uploadPageExplainer')}
       </div>
-      <a class="link link--action" href="/">
-        ${state.translate('sendYourFilesLink')}
-      </a>
     </div>`;
 };
